@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="ChromeTestCase(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="crossBrowsers.BuyDresses">
+        <methods>
+          <include name="CartShopCost"/>
+          <include name="CloseBrowser"/>
+          <include name="buyfiveDresses"/>
+        </methods>
+      </class> <!-- crossBrowsers.BuyDresses -->
+    </classes>
+  </test> <!-- ChromeTestCase(failed) -->
+  <test thread-count="5" name="FirefoxTestCase(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="crossBrowsers.BuyDresses">
+        <methods>
+          <include name="CartShopCost"/>
+          <include name="CloseBrowser"/>
+          <include name="buyfiveDresses"/>
+        </methods>
+      </class> <!-- crossBrowsers.BuyDresses -->
+    </classes>
+  </test> <!-- FirefoxTestCase(failed) -->
+</suite> <!-- Failed suite [Suite] -->
